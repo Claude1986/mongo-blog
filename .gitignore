@@ -1,0 +1,8 @@
+## Python stuff
+
+*.pyc
+
+
+## MongoDB stuff
+
+/data
