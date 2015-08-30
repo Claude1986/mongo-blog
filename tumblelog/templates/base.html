@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>My Tumblelog</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <style>.content {padding-top: 80px;}</style>
+    <style>.content {padding-top: 80px;} a.brand {color: #fff }</style>
   </head>
 
   <body>
@@ -25,10 +25,8 @@
 
     <div class="container">
       <div class="content">
-        {% block page_header %}
-        {% endblock %}
-        {% block content %}
-        {% endblock %}
+        {% block page_header %}{% endblock %}
+        {% block content %}{% endblock %}
       </div>
     </div>
     {% block js_footer %}{% endblock %}
