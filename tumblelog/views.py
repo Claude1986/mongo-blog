@@ -16,7 +16,7 @@ class ListView(MethodView):
 
 class DetailView(MethodView):
 
-    form = model_form(Comment, exclude=['created_at'])
+    form = model_form(Comment, exclude=['created_date'])
 
     def get_context(self, slug):
         post = Post.objects.get_or_404(slug=slug)

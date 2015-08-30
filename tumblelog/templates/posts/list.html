@@ -18,7 +18,7 @@
         <p><img src="{{ post.image_url }}" /><p>
       {% endif %}
       <p>
-        {{ post.created_at.strftime('%H:%M %Y-%m-%d') }} |
+        {{ post.created_date.strftime('%H:%M %Y-%m-%d') }} |
         {% with total=post.comments|length %}
             {{ total }} comment {%- if total > 1 %}s{%- endif -%}
         {% endwith %}
